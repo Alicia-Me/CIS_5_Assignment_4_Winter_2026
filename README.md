@@ -7,24 +7,16 @@ Create a C++ program that manages 10 employee performance scores (0–100) using
 
 ## Requirements
 
-- Hard-code a fixed-size array of 10 integer scores (example: 75 88 62 95 50 82 70 91 45 78)
+- Hard-code a fixed-size array of 10 integer scores:
+  - int ary[10] = {75, 88, 62, 95, 50, 82, 70, 91, 45, 78}
 
 Define and use these functions:
 
 1. `int calculateSum(const int scores[], int size)`  
-   → pass by const pointer / const reference → read-only
-
 2. `double calculateAverage(int sum, int size)`  
-   → pass sum **by value** (demonstrate copying)
-
 3. `void addBonus(int scores[], int size, int bonus)`  
-   → pass array **by pointer** OR **by reference** → modify originals (e.g. +10)
-
 4. `int findMinimum(const int* scores, int size)`  
-   → pass **by pointer** → return lowest score (no sorting!)
-
 5. `int countHighPerformers(const int scores[], int size)`  
-   → pass **by const pointer/reference** → count scores ≥ 80
 
 In `main()`:
 
